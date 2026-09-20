@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Политика конфиденциальности — AssistantBot</title>
+<meta name="description" content="Какие данные Google получает AssistantBot, зачем, где хранит и кому не передаёт.">
+<style>
+  :root {
+    --fg: #1a1a1a; --muted: #5d6470; --bg: #ffffff;
+    --card: #f6f7f9; --line: #e3e6ea; --accent: #2f6fb0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fg: #e8eaed; --muted: #9aa3ae; --bg: #14161a;
+      --card: #1c2027; --line: #2a2f38; --accent: #7fb2e5;
+    }
+  }
+  :root[data-theme="dark"] {
+    --fg: #e8eaed; --muted: #9aa3ae; --bg: #14161a;
+    --card: #1c2027; --line: #2a2f38; --accent: #7fb2e5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 48px 16px 80px;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 28px; line-height: 1.3; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .date { color: var(--muted); margin: 0 0 32px; font-size: 15px; }
+  h2 { font-size: 19px; margin: 34px 0 12px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 7px; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 12px; padding: 18px 20px; margin: 22px 0;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 0 0 16px; font-size: 15.5px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  code { background: var(--card); border: 1px solid var(--line); border-radius: 5px; padding: 1px 6px; font-size: 14.5px; }
+  footer {
+    margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 15px;
+  }
+  .en { color: var(--muted); font-size: 15.5px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Политика конфиденциальности</h1>
+  <p class="date">Приложение AssistantBot · обновлено 20 сентября 2026 года</p>
+
+  <p>AssistantBot — личный ассистент, которым пользуется один человек:
+  его автор. Приложение не публичное, регистрации в нём нет,
+  других пользователей нет и не предполагается.</p>
+
+  <div class="card">
+    Приложение работает с данными владельца в его собственном аккаунте Google
+    и только по его просьбе. Чужие данные оно не получает и получать не может.
+  </div>
+
+  <h2>Какие данные приложение получает</h2>
+  <p>Только то, что открывают выданные владельцем разрешения Google:</p>
+
+  <table>
+    <tr><th>Разрешение</th><th>Для чего</th></tr>
+    <tr><td>Чтение почты Gmail</td><td>найти письмо, пересказать содержание, показать вложения по просьбе владельца</td></tr>
+    <tr><td>Отправка почты Gmail</td><td>отправить письмо или ответ, который владелец продиктовал и подтвердил</td></tr>
+    <tr><td>Календарь</td><td>посмотреть события и приглашения, ответить на приглашение</td></tr>
+    <tr><td>Контакты</td><td>найти человека, дописать ему почту или телефон</td></tr>
+    <tr><td>Диск, Документы, Таблицы</td><td>найти файл, прочитать значения, посчитать итог, записать результат</td></tr>
+    <tr><td>Формы</td><td>посмотреть форму и ответы на неё</td></tr>
+    <tr><td>Адрес почты владельца</td><td>отличить приглашение, присланное ему, от события, заведённого им самим</td></tr>
+  </table>
+
+  <h2>Как они используются</h2>
+  <p>Данные читаются в момент ответа на просьбу владельца и служат
+  единственной цели — выполнить эту просьбу. Например: «найди письмо
+  от банка за август» или «посчитай сумму по столбцу в таблице склада».</p>
+  <p>Данные из аккаунта Google <strong>не используются</strong> для рекламы,
+  аналитики, профилирования, обучения моделей и любых иных целей, кроме
+  прямого ответа владельцу.</p>
+
+  <h2>Где они хранятся</h2>
+  <ul>
+    <li>Приложение работает на домашнем компьютере владельца.</li>
+    <li>Письма, файлы и таблицы целиком не сохраняются: они читаются,
+      используются в ответе и не откладываются на диск.</li>
+    <li>Ключ доступа к Google хранится на том же домашнем компьютере,
+      в файле, доступном только этой машине.</li>
+    <li>Журналы работы ведутся без содержимого сообщений.</li>
+  </ul>
+
+  <h2>Кому они передаются</h2>
+  <p>Никому. Данные не продаются, не публикуются и не передаются третьим
+  лицам. Единственное исключение технического свойства: чтобы понять просьбу
+  и составить ответ, приложение обращается к языковой модели Claude
+  (Anthropic) — туда попадает тот фрагмент, который нужен для ответа
+  на конкретную просьбу. Эти обращения не используются для обучения моделей.</p>
+
+  <h2>Сколько они хранятся</h2>
+  <p>Переписка с ассистентом хранится на домашнем компьютере владельца
+  ограниченное время и удаляется по его команде. Разрешение доступа
+  к Google действует, пока владелец не отзовёт его сам.</p>
+
+  <h2>Как отозвать доступ</h2>
+  <p>В любой момент на странице
+  <a href="https://myaccount.google.com/permissions">Google Account → Сторонние приложения</a>.
+  После отзыва приложение теряет доступ к данным немедленно.</p>
+
+  <h2>Соответствие правилам Google</h2>
+  <p>Использование данных, полученных через Google API, подчиняется
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">API Services User Data Policy</a>,
+  включая требования Limited Use.</p>
+
+  <h2>Связь</h2>
+  <p>Вопросы об этой политике и обработке данных задаются владельцу
+  приложения напрямую. Его адрес показывается на экране согласия Google
+  при выдаче доступа; на этой странице он не публикуется, чтобы не попадал
+  в руки сборщиков почтовых адресов.</p>
+
+  <h2>Summary in English</h2>
+  <p class="en">AssistantBot is a personal assistant used by a single person —
+  its author. It accesses the owner's own Google account data (Gmail read and send,
+  Calendar, Contacts, Drive, Docs, Sheets, Forms, and the owner's email address)
+  solely to fulfil that person's direct requests. The data is not stored beyond
+  what a single answer requires, is never sold, published or shared with third
+  parties, and is not used for advertising, analytics or model training. Requests
+  are processed by the Claude language model (Anthropic) only to the extent needed
+  to answer. Access can be revoked at any time at
+  <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.
+  Use of Google user data complies with the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements. The owner's contact address is shown
+  on the Google consent screen and is deliberately not published here.</p>
+
+  <footer>
+    <a href="index.html">← AssistantBot</a>
+  </footer>
+</main>
+</body>
+</html>

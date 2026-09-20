@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AssistantBot</title>
+<meta name="description" content="Личный Telegram-ассистент. Работает на домашнем сервере, для одного человека.">
+<style>
+  :root {
+    --fg: #1a1a1a; --muted: #5d6470; --bg: #ffffff;
+    --card: #f6f7f9; --line: #e3e6ea; --accent: #2f6fb0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fg: #e8eaed; --muted: #9aa3ae; --bg: #14161a;
+      --card: #1c2027; --line: #2a2f38; --accent: #7fb2e5;
+    }
+  }
+  :root[data-theme="dark"] {
+    --fg: #e8eaed; --muted: #9aa3ae; --bg: #14161a;
+    --card: #1c2027; --line: #2a2f38; --accent: #7fb2e5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 48px 16px 80px;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 30px; line-height: 1.25; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0 0 36px; }
+  h2 { font-size: 19px; margin: 36px 0 12px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 12px; padding: 20px 22px; margin: 24px 0;
+  }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 15px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>AssistantBot</h1>
+  <p class="sub">Личный ассистент в Telegram. Один владелец, один домашний сервер, посторонних пользователей нет.</p>
+
+  <p>Это небольшая программа, которая живёт на домашнем компьютере и помогает
+  своему владельцу разбирать день: календарь, напоминания, контакты, почта,
+  файлы. Общение с ней идёт через Telegram — голосом или текстом.</p>
+
+  <div class="card">
+    <strong>Приложение не публичное.</strong> Им пользуется один человек —
+    его автор. Регистрации нет, других пользователей нет, доступ никому
+    не выдаётся.
+  </div>
+
+  <h2>Зачем ему доступ к Google</h2>
+  <p>Ассистент работает с данными своего владельца в его же аккаунте Google:
+  читает и отправляет письма по его просьбе, ищет файлы на Диске, считает
+  по таблицам, смотрит приглашения в календаре.</p>
+  <p>Что именно он берёт, зачем и куда девает — подробно
+  на странице <a href="privacy.html">политики конфиденциальности</a>.</p>
+
+  <h2>Где он работает</h2>
+  <ul>
+    <li>на домашнем сервере под Windows, как обычная служба;</li>
+    <li>данные не уходят на сторонние площадки и не публикуются;</li>
+    <li>исходный код написан под одного человека и не распространяется.</li>
+  </ul>
+
+  <h2>Связь</h2>
+  <p>Вопросы об этом приложении и обработке данных задаются владельцу
+  напрямую. Его адрес виден на экране согласия Google при выдаче доступа —
+  здесь он не публикуется, чтобы не собирался роботами.</p>
+
+  <footer>
+    <a href="privacy.html">Политика конфиденциальности</a>
+  </footer>
+</main>
+</body>
+</html>
